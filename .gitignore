@@ -1,0 +1,10 @@
+ml-env/
+train_images/
+test_images/
+deep_learning_project/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+.vscode/
+.DS_Store
