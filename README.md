@@ -33,6 +33,7 @@ TP ML/
 ├── .gitignore              # Ignores local caches and temp weights (preserves models/face_net_final.pt)
 ├── cnn.py                  # Main classifier training script (course-aligned architecture)
 ├── diagnostics.py          # Metrics, threshold optimization, hard validation, visualizations
+├── eval_cnn.py             # One-command evaluation of final model on test images (no training)
 ├── models/
 │   ├── face_net_final.pt   # Final frozen classifier weights (Wider Convs, Seed 44)
 │   └── config_final.json   # Final architecture and hyperparameter configuration
@@ -51,7 +52,17 @@ TP ML/
 
 ## 3. How to Train and Evaluate
 
-### Quick Start (Main Training Script)
+### Quick Evaluation (Test Detection Rates without Training)
+To evaluate the final model ([`models/face_net_final.pt`](./models/face_net_final.pt)) on the test set in ~2 seconds:
+```bash
+python eval_cnn.py
+```
+This prints the exact detection percentages:
+- **Face Recall**: % of test faces correctly detected
+- **No-Face Recall**: % of non-face background patches correctly rejected
+- **Balanced Accuracy & AUC**
+
+### Full Training (Main Training Script)
 Run the primary training routine with default hyperparameters (or customized CLI flags):
 ```bash
 python cnn.py --optimizer nesterov --lr 0.01 --epochs 20 --scheduler steplr --c1 16 --c2 32 --min-scale 0.7
