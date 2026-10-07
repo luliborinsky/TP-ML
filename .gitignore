@@ -5,6 +5,8 @@ deep_learning_project/
 __pycache__/
 *.pyc
 *.pt
+!face_net_final.pt
+!models/face_net_final.pt
 *.pth
 .vscode/
 .DS_Store

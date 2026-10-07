@@ -1,0 +1,23 @@
+{
+  "train_dir": "./train_images",
+  "test_dir": "./test_images",
+  "cache_train": "./cache_train.pt",
+  "cache_test": "./cache_test.pt",
+  "valid_size": 0.2,
+  "batch_size": 32,
+  "epochs": 20,
+  "lr": 0.01,
+  "momentum": 0.9,
+  "optimizer": "nesterov",
+  "scheduler": "steplr",
+  "seed": 42,
+  "tag": "step3_nesterov",
+  "checkpoint_path": "./face_net_final.pt",
+  "log_path": "./training_log_step3_nesterov.json",
+  "plot_path": "./training_curves_step3_nesterov.png",
+  "min_scale": 0.7,
+  "c1": 16,
+  "c2": 32,
+  "pooling": "max",
+  "best_seed": 44
+}
