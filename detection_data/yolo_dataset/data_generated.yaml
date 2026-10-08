@@ -1,0 +1,7 @@
+path: C:/Users/Samue/OneDrive/Desktop/INSA LYON/Semestre de Intercambio/ML/TP-ML/detection_data/yolo_dataset
+
+train: C:/Users/Samue/OneDrive/Desktop/INSA LYON/Semestre de Intercambio/ML/TP-ML/detection_data/yolo_dataset/train/images
+val: C:/Users/Samue/OneDrive/Desktop/INSA LYON/Semestre de Intercambio/ML/TP-ML/detection_data/yolo_dataset/val/images
+
+names:
+  0: face
