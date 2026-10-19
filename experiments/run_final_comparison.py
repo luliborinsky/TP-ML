@@ -1,8 +1,4 @@
 
-# run_final_comparison.py — Final 3-seed comparison: Baseline (Step 0) vs Final Model (e).
-
-
-
 import os
 import sys
 import json

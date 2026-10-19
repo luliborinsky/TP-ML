@@ -10,3 +10,16 @@ __pycache__/
 *.pth
 .vscode/
 .DS_Store
+
+
+# Ignorar el dataset comprimido
+WIDER_train.zip
+
+# Ignorar todas las imágenes de entrenamiento
+*.jpg
+*.jpeg
+*.png
+
+# Si tienes carpetas enteras de datos (por ejemplo, detection_data) es mejor ignorar la carpeta completa:
+detection_data/
+runs/

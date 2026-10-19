@@ -18,10 +18,6 @@ from cnn import CONFIG, run_experiment
 
 
 def run_experiment_group(tag_prefix, opt_name, lr, scheduler, epochs, seeds=[42, 43, 44]):
-    results = []
-    print(f"\n=======================================================")
-    print(f"Running Group: {tag_prefix} ({opt_name}, lr={lr}, sched={scheduler}, ep={epochs})")
-    print(f"=======================================================")
 
     for seed in seeds:
         cfg = CONFIG.copy()

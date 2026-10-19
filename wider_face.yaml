@@ -1,0 +1,8 @@
+
+path: detection_data/wider_yolo
+
+train: train/images
+val: val/images
+
+names:
+  0: face
