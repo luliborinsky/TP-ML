@@ -5,13 +5,8 @@ import shutil
 # Project paths
 PROJECT_DIR = Path(__file__).resolve().parent
 
-WIDER_DIR = PROJECT_DIR / "detection_data" / "WIDER_train" / "WIDER_train"
-IMAGES_DIR = WIDER_DIR / "images"
-ANNOTATIONS_DIR = WIDER_DIR / "wider_face_split"
-
-ANNOTATIONS_FILE = (
-    ANNOTATIONS_DIR / "wider_face_train_bbx_gt.txt"
-)
+IMAGES_DIR = PROJECT_DIR / "WIDER_train" / "images"
+ANNOTATIONS_FILE = PROJECT_DIR / "wider_face_train_bbx_gt.txt"
 
 OUTPUT_DIR = PROJECT_DIR / "detection_data" / "wider_yolo" / "train"
 OUTPUT_IMAGES = OUTPUT_DIR / "images"

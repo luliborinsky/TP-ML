@@ -1,5 +1,5 @@
 
-path: detection_data/wider_yolo
+path: ./detection_data/wider_yolo
 
 train: train/images
 val: val/images
