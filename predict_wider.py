@@ -27,7 +27,7 @@ def main():
     # Predict in batches and save annotated images
     model.predict(
         source=[str(p) for p in images],
-        imgsz=320,
+        imgsz=640,
         conf=0.20,
         iou=0.60,
         device="cpu",
